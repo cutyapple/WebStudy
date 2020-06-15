@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #target {
+        width: 300px;
+        height: 500px;
+        background: tomato;
+      }
+      #target > div:nth-child(n) {
+        border: 2px solid black;
+      }
+      #target > div > div {
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="target"
+      ondrop="drop_handler(event)"
+      ondragover="dragover_handler(event)"
+      onmousemove="mouseMoves(event)"
+    >
+      <div id="aa" draggable="true" ondragstart="dragstart_handler(event)">
+        a
+      </div>
+      <div id="bb" draggable="true" ondragstart="dragstart_handler(event)">
+        b
+      </div>
+      <div id="cc" draggable="true" ondragstart="dragstart_handler(event)">
+        c
+      </div>
+    </div>
+  </body>
+  <script src="./drag.js"></script>
+</html>

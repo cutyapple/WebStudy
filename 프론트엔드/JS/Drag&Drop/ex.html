@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      textarea {
+        width: 500px;
+        height: 400px;
+        margin: 30px;
+      }
+      #a {
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+      }
+    </style>
+    <script>
+      var beforeY = 0;
+      function myFunction(e) {
+        if (beforeY < e.clientY) console.log(e.clientY);
+        beforeY = e.clientY;
+      }
+    </script>
+  </head>
+  <body>
+    <div id="a" onmousemove="myFunction(event)"></div>
+  </body>
+</html>
