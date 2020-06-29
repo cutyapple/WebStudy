@@ -37,4 +37,4 @@
 * 모듈에서 액션들은 따로 불러옴.
 * `state`는 `useSelector(({비구조화할당}) =>({})`
 * `const dispatch = useDispatch();`
-* `useCallback`을 이용하여 `dispatch()`내뷍 모듈에서 불러온 액션들을 넣음.
+* `useCallback`을 이용하여 `dispatch()`내부의 모듈에서 불러온 액션들을 넣음.
