@@ -39,3 +39,7 @@
 * `const dispatch = useDispatch()`
 * `useCallback`을 이용하여 `dispatch()`내부에 모듈에서 불러온 액션들을 넣음.
 
+
+
+
+
